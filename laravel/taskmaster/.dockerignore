@@ -1,0 +1,30 @@
+# Git
+.git
+.gitignore
+
+# Dependencias (se instalan dentro del Docker, no se copian)
+/vendor
+/node_modules
+
+# Entorno y logs
+.env
+.env.backup
+.env.production
+*.log
+
+# Caché y herramientas de desarrollo
+/.phpunit.cache
+/.vscode
+/.idea
+/public/build
+/public/hot
+/storage/framework/cache/data/*
+/storage/framework/sessions/*
+/storage/framework/views/*
+
+# Otros
+.DS_Store
+Thumbs.db
+Dockerfile
+docker-compose.yml
+docker-config/
