@@ -1,8 +1,0 @@
-[08:58:42 2026-03-04] FETCHING Version 2.42.13
-[08:58:42 2026-03-04] DOWNLOADING https://github.com/spicetify/cli/releases/download/v2.42.13/spicetify-2.42.13-linux-amd64.tar.gz
-[08:58:43 2026-03-04] EXTRACTING /home/devy/.spicetify/spicetify.tar.gz
-[08:58:43 2026-03-04] SETTING EXECUTABLE PERMISSIONS TO /home/devy/.spicetify/spicetify
-[08:58:43 2026-03-04] REMOVING /home/devy/.spicetify/spicetify.tar.gz
-[08:58:43 2026-03-04] spicetify path already set in /home/devy/.bashrc, continuing...
-[08:58:43 2026-03-04] spicetify v2.42.13 was installed successfully to /home/devy/.spicetify
-[08:58:43 2026-03-04] Run 'spicetify --help' to get started
