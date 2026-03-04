@@ -1,0 +1,32 @@
+version: '3.8'
+services:
+
+  # Nuestra App (PHP)
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: taskmaster-app
+    container_name: taskmaster-app
+    restart: unless-stopped
+    volumes:
+      - .:/var/www
+    networks:
+      - taskmaster-network
+
+  # El Servidor Web (Nginx)
+  webserver:
+    image: nginx:alpine
+    container_name: taskmaster-webserver
+    restart: unless-stopped
+    ports:
+      - "8080:80"
+    volumes:
+      - .:/var/www
+      - ./docker-config/nginx:/etc/nginx/conf.d/
+    networks:
+      - taskmaster-network
+
+networks:
+  taskmaster-network:
+    driver: bridge
